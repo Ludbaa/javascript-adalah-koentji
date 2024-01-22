@@ -1,12 +1,12 @@
-import React from 'react';
+// import React from 'react';
 
-const Button = props => {
+
+
+
+const Button = (props) => {
   return (
-    <button
-      className={`h-10  px-6 font-semibold rounded-md bg-${props.variant}-700 text-black`}
-      type="submit"
-    >
-      Buy Now
+    <button className={`h-10 px-6 font-semibold rounded-md ${props.variant} text-white`} type="submit">
+      {props.text}
     </button>
   );
 };
@@ -14,10 +14,11 @@ const Button = props => {
 function App () {
   return (
     <div className=" flex justify-center bg-blue-600 min-h-screen items-center">
-      <div className="flex gap-x-4">
+      <div className="flex gap-x-7">
 
-        <Button variant="red" />
-        <Button variant="slate" />
+        <Button variant={`bg-red-700`} text={`login`}/>
+        <Button variant={`bg-slate-700`} text={ `logout`} />
+        <Button variant={`bg-black`} text={`register`} />
 
       </div>
     </div>
