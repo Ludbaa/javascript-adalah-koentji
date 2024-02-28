@@ -1,15 +1,16 @@
 import React from 'react';
 import Button from "./components/Elements/Button";
- 
+
+
 function App () {
   return (
-    <div className=" flex justify-center bg-blue-600 min-h-screen items-center">
-      <div className="flex gap-x-4">
-
-        <Button variant={`bg-lime-500`}>Login</Button>
-        <Button variant={`bg-orange-500`}>Logout</Button>
-        <Button variant={`bg-red-500`}>Register</Button>
-
+    <div className='flex justify-center min-h-screen items-center'>
+      <div className='w-full max-w-xs'>
+        <h1 className='text-3xl font-bold mb-2 text-red-500'>Login
+        </h1>
+        <p className='font-medium text-slate-400'>
+          welcome, please enter your details
+        </p>
       </div>
     </div>
   );
