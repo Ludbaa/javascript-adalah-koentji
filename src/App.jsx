@@ -13,13 +13,6 @@ function App () {
         </p>
         <form action=''>
           <div className='mb-6'>
-            <label htmlFor='email'
-              className='block text-slate-600 text-sm font-semibold  mb-2 text-left'>
-              Email
-            </label>
-            <input type='text' className='text-sm border rounded w-full py-2 px-3 text-slate-500 placeholder: opacity-50'
-              placeholder='example@gmail.com'
-            />
           </div>
           <div className='mb-6'>
             <label htmlFor='password'
@@ -30,7 +23,7 @@ function App () {
               placeholder='********'
             />
           </div>
-          <Button variant="bg-red-700 w-full">Login</Button>
+          <Button classname="bg-red-700 w-full">Login</Button>
         </form>
         
       </div>
